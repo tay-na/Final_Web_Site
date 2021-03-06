@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Диплом</title>
+		<link rel="stylesheet" type="text/css" href="CSS/CSS_final.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="apple-touch-icon" sizes="57x57" href="Icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="Icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="Icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="Icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="Icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="Icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="Icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="Icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="Icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="Icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="Icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body class="page">
+
+		<div class="popup">
+			
+			<div class="popup__window popup__window-call">
+				<button class="popup__close"><i class="fas fa-times"></i></button>
+				<p class="popup__description description_bold">Оставьте ваши контакты и&nbsp;я&nbsp;обязательно вам перезвоню</p>
+				<form class="popup__form" method="POST">
+
+					<div class="popup__form-field">
+						<input class="popup__form-input-name" type="text" name="name" placeholder="ФИО *" data-validate>
+						<span class="popup__form-field-hint">Обязательно для заполнения</span>
+					</div>
+
+					<div class="popup__form-field">
+						<input class="popup__form-input-phone" type="tel" name="phone" placeholder="Телефон *" data-validate>
+						<span class="popup__form-field-hint">Обязательно для заполнения</span>
+					</div>
+					<input class="form__submit button_color_orange" type="submit" name="contacts-submit" value="Отправить">
+				</form>
+			</div>
+
+			<div class="popup__window popup__window-request">
+				<button class="popup__close"><i class="fas fa-times"></i></button>
+				<p class="popup__description">Оставьте ваши контакты и&nbsp;я&nbsp;обязательно свяжусь с&nbsp;вами</p>
+				<form class="popup__form" method="POST">
+
+					<div class="popup__form-field">
+						<input class="popup__form-input-name" type="text" name="name" placeholder="ФИО *" data-validate>
+						<span class="popup__form-field-hint">Обязательно для заполнения</span>
+					</div>
+
+					<div class="popup__form-field">
+						<input class="popup__form-input-phone" type="tel" name="phone" placeholder="Телефон *" data-validate>
+						<span class="popup__form-field-hint">Обязательно для заполнения</span>
+					</div>
+
+					<div class="popup__form-field">
+						<input class="popup__form-input-email" type="email" name="email" placeholder="E-mail *" data-validate>
+						<span class="popup__form-field-hint">Обязательно для заполнения</span>
+					</div>
+
+					<input class="form__submit button_color_orange" type="submit" name="contacts-submit" value="Отправить">
+				</form>
+			</div>
+
+		</div>
+
+		<header class="header">
+			<div class="header__container">
+				<div class="container-flex flex_wrap">
+					<button class="header__hamburger"><i class="fas fa-bars fa-1x icon_gradient"></i></button>
+					<div class="header__menu">
+						<nav class="menu-list header__menu-list">
+							<a class="menu-list__item menu-list_black" href="#skills">Услуги</a>
+							<a class="menu-list__item menu-list_black" href="#examples">Портфолио</a>
+							<a class="menu-list__item menu-list_black" href="#price">Стоимость</a>
+						</nav>
+					</div>
+
+					<a class="phone-link header__phone" href="tel:+74999957755">+7 (499) 995-55-77</a>
+
+					<button class="popup-toggler_button button_color_transparent button-call" type="button">Заказать звонок</button>
+					<button class="popup-toggler_icon button-call" type="button"><i class="icon_gradient icon_transform_rotate fas fa-phone"></i></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<h1 class="main__header_hidden">Скрытый заголовок</h1>
+
+			<section class="intro">
+
+				<div class="fixed-container_fullscreen">
+
+					<div class="intro_margin-top">
+						<div class="intro__svg-background">
+								<svg class="intro__svg" width="815" height="630" viewBox="0 135 815 630">
+									<path d="M1499.52,176.407c106.74-50.456,207.47-50.611,291.69-12.736,84.44,37.567,152.36,113.165,198.49,207.114,44.27,94.884,44.23,196.8,8.07,279.242-36.66,83.673-97.67,146.755-180.8,191.777-44.03,22.669-90.32,38.2-149.15,47.731-58.06,9.394-128.68,12.79-203.5,7.944-148.47-9.321-314.87-53.081-349.96-151.789-19.89-49.013-7.41-105.2,17.32-161.74,25.13-56.624,62.5-113.6,101.74-166.115,39.64-52.593,81.15-100.717,123.89-141.529,43.14-40.9,87.51-74.479,142.21-99.9h0Z" transform="translate(-1104.5 0)" fill="url('#myGradient')"/>
+									<defs>
+										<linearGradient id="myGradient" gradientTransform="rotate(90)">
+										<stop offset="5%"  stop-color="#ff3095" />
+										<stop offset="45%"  stop-color="#ff6c70" />
+										<stop offset="95%" stop-color="#ff8f5b" />
+										</linearGradient>
+									</defs>
+								</svg>
+						</div>
+
+						<div class="intro__above-svg fixed-container">
+							<div class="container-flex flex_wrap">
+								<div class="intro__first-block">
+									<h2 class="first-block__header header_main">Алексей Иванов</h2>
+									<p class="description first-block__description description_medium">Frontend-разработчик и веб-верстальщик</p>
+									<button class="intro__button-request button-request button_color_orange" type="button">Узнать больше</button>
+								</div>
+
+								<div class="intro__second-block">
+									<img class="second-block__image" src="img/man.png" alt="Алексей Иванов">
+								</div>
+							</div>
+							<div class="flying-elements flying-elements_gradient">{ }</div>
+							<div class="flying-elements flying-elements_gradient">&lt;/&gt;</div>
+							<div class="flying-elements flying-elements_gradient">&lt;div&gt;</div>
+							<div class="flying-elements flying-elements_gradient">#</div>
+							<div class="flying-elements flying-elements_gradient">&lt;/&gt;</div>
+							<div class="flying-elements flying-elements_gradient">&lt;div&gt;</div>					
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+
+			<section id="skills" class="skills">
+				
+				<div class="fixed-container">
+					<h3 class="skills__header header_semibold header_big">Что я делаю</h3>
+					<div class="container-flex flex_wrap">
+						<div class="skills__feature">
+							<img class="skills__image" src="data:image/png;base64,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" alt="icon1">
+							<p class="description description_small">Верстка лендинг-страниц<br>и сайтов любой сложности</p>
+						</div>
+						<div class="skills__feature">
+							<img class="skills__image" src="data:image/png;base64,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" alt="icon2">
+							<p class="description description_small">Активная верстка под все<br>браузеры и устройства</p>
+						</div>
+						<div class="skills__feature">
+							<img class="skills__image" src="data:image/png;base64,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 " alt="icon3">
+							<p class="description description_small">Frontend-разработка<br>и программирование</p>
+						</div>
+						<div class="skills__feature">
+							<img class="skills__image" src="data:image/png;base64,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" alt="icon4">
+							<p class="description description_small">Исправление и доработка<br>существующей верстки</p>
+						</div>
+					</div>
+					<button class="skills__button-request button-request button_color_orange" type="button">Узнать стоимость</button>
+				</div>
+
+			</section>
+
+			<section id="examples" class="examples">
+				
+				<div class="fixed-container">
+					<h3 class="examples__header header_big">Примеры моих работ</h3>
+					<div class="container-flex examples__carousel">
+						<div class="examples__item">
+							<img class="examples__image" src="img/example1.png" alt="Сайт психолога Веры Антоновой">
+							<p class="description description_large examples__description">Сайт психолога Веры Антоновой</p>
+						</div>
+						<div class="examples__item">
+							<img class="examples__image" src="img/example2.png" alt="Сайт магазина детской одежды">
+							<p class="description description_large examples__description">Сайт магазина детской одежды</p>
+						</div>
+						<div class="examples__item">
+							<img class="examples__image" src="img/example3.png" alt="Сайт магазина Рыболов">
+							<p class="description description_large examples__description">Сайт магазина "Рыболов"</p>
+						</div>
+						<div class="examples__item">
+							<img class="examples__image" src="img/example2.png" alt="Сайт магазина детской одежды">
+							<p class="description description_large examples__description">Сайт магазина детской одежды</p>
+						</div>
+					</div>
+					<button class="examples__button-request button-request button_color_orange" type="button">Заказать проект</button>
+				</div>
+
+			</section>
+
+			<section id="price" class="price">
+
+				<div class="fixed-container_fullscreen fixed-container_background_gradient">
+					<div class="fixed-container">
+						<h4 class="price__header header_small">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h4>
+						<p class="description description_small price__description">* Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимоти от&nbsp;сложности задач.</p>
+					</div>
+					<div class="flying-elements flying-elements_white">{ }</div>
+					<div class="flying-elements flying-elements_white">#</div>
+					<div class="flying-elements flying-elements_white">&lt;/&gt;</div>
+					<div class="flying-elements flying-elements_white">&lt;div&gt;</div>
+					<div class="flying-elements flying-elements_white">{ }</div>
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="fixed-container">
+				<div class="container-flex flex_wrap">
+					<div class="footer__menu">
+						<nav class="menu-list">
+							<a class="menu-list__item footer__menu-list-item menu-list_grey" href="#skills">Услуги</a>
+							<a class="menu-list__item footer__menu-list-item menu-list_grey" href="#examples">Портфолио</a>
+							<a class="menu-list__item footer__menu-list-item menu-list_grey" href="#price">Стоимость</a>
+						</nav>
+					</div>
+
+					<div class="footer__contacts-block">
+						<div class="contacts-block__item">
+							<i class="icon_gradient icon_transform_rotate fas fa-phone"></i>
+							<a class="phone-link footer__contacts-link" href="tel:+74999957755">+7 (499) 995-77-55</a>
+						</div>
+
+						<div class="contacts-block__item">
+							<i class="icon_gradient icon_transform_rotate fas fa-envelope"></i>
+							<a class="email-link footer__contacts-link" href="mailto:tay-na@mail.ru?subject=Вопрос_по_HTML">example@mail.ru</a>
+						</div>
+					</div>
+
+					<div class="footer__links-section">
+						<button class="footer__button-request button-request button-request_small button_color_orange" type="button">Заказать звонок</button>
+						<button class="footer__button-request button-call_large button-call button_color_transparent" type="button">Заказать звонок</button>
+						<ul class="footer__social">
+							<li class="footer__social-link link-vk"><a class="footer__social-sprite" href="https://vk.com/" target="blank"></a></li>
+							<li class="footer__social-link link-fb"><a class="footer__social-sprite" href="https://www.facebook.com/" target="blank"></a></li>
+							<li class="footer__social-link link-tw"><a class="footer__social-sprite" href="https://twitter.com/" target="blank"></a></li>
+							<li class="footer__social-link link-in"><a class="footer__social-sprite" href="https://www.instagram.com/" target="blank"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__copyright">
+				<small class="footer__copyright-text">&copy; Алексей Иванов, 2019 - 2021</small>
+			</div>
+		</footer>
+
+		<!-- Script Source Files -->
+		<script src="JS/jquery-3.4.1.min.js"></script>
+		<script src="slick/slick.min.js"></script>		
+		<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+		<script src="JS/script_popup.js"></script>	
+		<script src="JS/script_menu-toggle.js"></script>
+		<script src="JS/script_slick.js"></script>
+
+	</body>
+</html>
